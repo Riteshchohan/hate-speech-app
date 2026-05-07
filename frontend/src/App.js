@@ -182,20 +182,6 @@ function App() {
           </div>
         )}
 
-        {/* Tech info (simplified, no emojis) */}
-        <div className="tech-grid">
-          {[
-            { label: 'Preprocessing', desc: 'Tokenisation · Stopword removal · Stemming' },
-            { label: 'Vectorisation', desc: 'TF-IDF · Bigrams · 10,000 features' },
-            { label: 'Imbalance', desc: 'SMOTE oversampling on minority class' },
-            { label: 'Models', desc: 'LR · Naive Bayes · SVM (best by F1)' },
-          ].map((t, i) => (
-            <div className="tech-card" key={i}>
-              <div className="tech-label">{t.label}</div>
-              <div className="tech-desc">{t.desc}</div>
-            </div>
-          ))}
-        </div>
       </main>
 
       <footer className="footer">
